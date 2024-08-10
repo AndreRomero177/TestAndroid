@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Evaluación</title>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Test de Evaluación</h1>
+        <form id="quiz-form">
+            <!-- Pregunta 1 -->
+            <div class="mb-4">
+                <p><strong>Pregunta 1 (10 puntos)</strong></p>
+                <p>a. Defina qué es un sistema distribuido.</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1a" value="Una colección de elementos informáticos autónomos que se muestran a sus usuarios como un sistema único y coherente." id="q1a1">
+                    <label class="form-check-label" for="q1a1">Una colección de elementos informáticos autónomos que se muestran a sus usuarios como un sistema único y coherente.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1a" value="Un sistema único y complejo operado por una sola máquina." id="q1a2">
+                    <label class="form-check-label" for="q1a2">Un sistema único y complejo operado por una sola máquina.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1a" value="Una red de sistemas centralizados conectados por un servidor." id="q1a3">
+                    <label class="form-check-label" for="q1a3">Una red de sistemas centralizados conectados por un servidor.</label>
+                </div>
+
+                <p>b. Mencione dos objetivos de los Sistemas Distribuidos, y explíquelos brevemente.</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1b" value="Compartir recursos: Reducir costos, facilitar la colaboración y el intercambio de información. Transparente a usuarios finales: La capacidad de un sistema distribuido para ocultar la complejidad del sistema a los usuarios y permitirles interactuar con el sistema de manera transparente." id="q1b1">
+                    <label class="form-check-label" for="q1b1">Compartir recursos: Reducir costos, facilitar la colaboración y el intercambio de información. Transparente a usuarios finales: La capacidad de un sistema distribuido para ocultar la complejidad del sistema a los usuarios y permitirles interactuar con el sistema de manera transparente.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1b" value="Seguridad y control: Asegurar que todos los datos estén protegidos y que el sistema tenga un control completo sobre todas las operaciones." id="q1b2">
+                    <label class="form-check-label" for="q1b2">Seguridad y control: Asegurar que todos los datos estén protegidos y que el sistema tenga un control completo sobre todas las operaciones.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1b" value="Velocidad y rendimiento: Asegurar que el sistema funcione a alta velocidad y con el mejor rendimiento posible." id="q1b3">
+                    <label class="form-check-label" for="q1b3">Velocidad y rendimiento: Asegurar que el sistema funcione a alta velocidad y con el mejor rendimiento posible.</label>
+                </div>
+
+                <p>c. Haga una comparación de los sistemas distribuidos con los sistemas centralizados.</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1c" value="Centralizados: Simplicidad. Fácil de administrar. Punto de falla único. Distribuidos: Tolerante a fallas. Escalable. Aprovechamiento de los recursos. Más complejo de administrar. Dependiente de las conexiones." id="q1c1">
+                    <label class="form-check-label" for="q1c1">Centralizados: Simplicidad. Fácil de administrar. Punto de falla único. Distribuidos: Tolerante a fallas. Escalable. Aprovechamiento de los recursos. Más complejo de administrar. Dependiente de las conexiones.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1c" value="Centralizados: Tolerante a fallas. Escalable. Distribuidos: Simplicidad. Fácil de administrar. Punto de falla único." id="q1c2">
+                    <label class="form-check-label" for="q1c2">Centralizados: Tolerante a fallas. Escalable. Distribuidos: Simplicidad. Fácil de administrar. Punto de falla único.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1c" value="Centralizados: Mayor capacidad de procesamiento. Distribuidos: Menor costo y facilidad de mantenimiento." id="q1c3">
+                    <label class="form-check-label" for="q1c3">Centralizados: Mayor capacidad de procesamiento. Distribuidos: Menor costo y facilidad de mantenimiento.</label>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="mb-4">
+                <p><strong>Pregunta 2 (10 puntos)</strong></p>
+                <p>a. ¿Qué elementos componen el patrón de diseño MVP y para qué se utiliza?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2a" value="El patrón MVP se basa en separar los componentes de la aplicación en tres capas: Modelo, Vista y Presentador." id="q2a1">
+                    <label class="form-check-label" for="q2a1">El patrón MVP se basa en separar los componentes de la aplicación en tres capas: Modelo, Vista y Presentador.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2a" value="El patrón MVP utiliza un solo componente para manejar toda la lógica y la vista de la aplicación." id="q2a2">
+                    <label class="form-check-label" for="q2a2">El patrón MVP utiliza un solo componente para manejar toda la lógica y la vista de la aplicación.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2a" value="El patrón MVP se basa en la integración directa entre el modelo y la vista sin ninguna capa intermedia." id="q2a3">
+                    <label class="form-check-label" for="q2a3">El patrón MVP se basa en la integración directa entre el modelo y la vista sin ninguna capa intermedia.</label>
+                </div>
+
+                <p>b. Mencione y describa las ventajas que ofrece el patrón de diseño MVP.</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2b" value="Reusabilidad. Reutilización de capas correctamente creadas y definidas. Independencia entre las capas. Facilita la escalabilidad y el mantenimiento del código." id="q2b1">
+                    <label class="form-check-label" for="q2b1">Reusabilidad. Reutilización de capas correctamente creadas y definidas. Independencia entre las capas. Facilita la escalabilidad y el mantenimiento del código.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2b" value="Interoperabilidad entre diferentes plataformas. Facilidad para gestionar los recursos del sistema." id="q2b2">
+                    <label class="form-check-label" for="q2b2">Interoperabilidad entre diferentes plataformas. Facilidad para gestionar los recursos del sistema.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2b" value="Optimización del rendimiento mediante la integración directa del modelo con la vista." id="q2b3">
+                    <label class="form-check-label" for="q2b3">Optimización del rendimiento mediante la integración directa del modelo con la vista.</label>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="mb-4">
+                <p><strong>Pregunta 3 (10 puntos)</strong></p>
+                <p>a. Explique brevemente los diferentes escenarios para el intercambio de datos entre la aplicación y el servidor.</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="q3a" value="Online" id="q3a1">
+                    <label class="form-check-label" for="q3a1">Online</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="q3a" value="Offline" id="q3a2">
+                    <label class="form-check-label" for="q3a2">Offline</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="q3a" value="Híbrida" id="q3a3">
+                    <label class="form-check-label" for="q3a3">Híbrida</label>
+                </div>
+
+                <p>b. Se pide que desarrolle una aplicación para una empresa de venta de ropa que permita llevar un control de la mercadería...</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3b" value="Utilizaría el escenario online ya que los vendedores necesitan saber el estado del stock de los productos en tiempo real y se cuenta con varias sucursales." id="q3b1">
+                    <label class="form-check-label" for="q3b1">Utilizaría el escenario online ya que los vendedores necesitan saber el estado del stock de los productos en tiempo real y se cuenta con varias sucursales.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3b" value="Utilizaría el escenario offline ya que no es necesario contar con conexión en todo momento." id="q3b2">
+                    <label class="form-check-label" for="q3b2">Utilizaría el escenario offline ya que no es necesario contar con conexión en todo momento.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3b" value="Utilizaría el escenario híbrido para combinar ventajas del modo online y offline." id="q3b3">
+                    <label class="form-check-label" for="q3b3">Utilizaría el escenario híbrido para combinar ventajas del modo online y offline.</label>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="mb-4">
+                <p><strong>Pregunta 4 (10 puntos)</strong></p>
+                <p>a. Describa brevemente los siguientes componentes de las aplicaciones Android e indique para qué se utilizan.</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4a" value="Activity: Son las pantallas de la aplicación. Intent: Me permite iniciar un Activity desde otro Activity o iniciar un Servicio. Spinner: Es una lista desplegable que permite al usuario seleccionar una de las opciones presentadas." id="q4a1">
+                    <label class="form-check-label" for="q4a1">Activity: Son las pantallas de la aplicación. Intent: Me permite iniciar un Activity desde otro Activity o iniciar un Servicio. Spinner: Es una lista desplegable que permite al usuario seleccionar una de las opciones presentadas.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4a" value="Activity: Maneja las conexiones de red. Intent: Permite iniciar servicios externos. Spinner: Muestra una imagen en la pantalla." id="q4a2">
+                    <label class="form-check-label" for="q4a2">Activity: Maneja las conexiones de red. Intent: Permite iniciar servicios externos. Spinner: Muestra una imagen en la pantalla.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4a" value="Activity: Maneja la lógica de la aplicación. Intent: Controla la navegación entre pantallas. Spinner: Permite seleccionar una opción de una lista." id="q4a3">
+                    <label class="form-check-label" for="q4a3">Activity: Maneja la lógica de la aplicación. Intent: Controla la navegación entre pantallas. Spinner: Permite seleccionar una opción de una lista.</label>
+                </div>
+
+                <p>b. Si quiero organizar los componentes de una pantalla de mi aplicación de forma no lineal...</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4b" value="Utilizaría el ConstraintLayout ya que me permite organizar los componentes de la pantalla de forma relativa a los otros componentes y márgenes." id="q4b1">
+                    <label class="form-check-label" for="q4b1">Utilizaría el ConstraintLayout ya que me permite organizar los componentes de la pantalla de forma relativa a los otros componentes y márgenes.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4b" value="Utilizaría un LinearLayout para mantener una disposición ordenada en una sola dirección." id="q4b2">
+                    <label class="form-check-label" for="q4b2">Utilizaría un LinearLayout para mantener una disposición ordenada en una sola dirección.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4b" value="Utilizaría un TableLayout para organizar los componentes en una tabla con filas y columnas." id="q4b3">
+                    <label class="form-check-label" for="q4b3">Utilizaría un TableLayout para organizar los componentes en una tabla con filas y columnas.</label>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="mb-4">
+                <p><strong>Pregunta 5 (10 puntos)</strong></p>
+                <p>En su aplicación de gestión de estudiantes, se desea agregar un botón “ver estudiante”...</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" value="public void verEstudiante(View view) { Intent intent = new Intent(this, VerEstudiante.class); Bundle bundle = new Bundle(); bundle.putInt('CI', estudianteCI); intent.putExtras(bundle); startActivity(intent); }" id="q5a1">
+                    <label class="form-check-label" for="q5a1">public void verEstudiante(View view) { Intent intent = new Intent(this, VerEstudiante.class); Bundle bundle = new Bundle(); bundle.putInt('CI', estudianteCI); intent.putExtras(bundle); startActivity(intent); }</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" value="public void verEstudiante(View view) { Intent intent = new Intent(this, VerEstudiante.class); startActivity(intent); }" id="q5a2">
+                    <label class="form-check-label" for="q5a2">public void verEstudiante(View view) { Intent intent = new Intent(this, VerEstudiante.class); startActivity(intent); }</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" value="public void verEstudiante(View view) { Intent intent = new Intent(this, VerEstudiante.class); Bundle bundle = new Bundle(); bundle.putString('ID', estudianteID); intent.putExtras(bundle); startActivity(intent); }" id="q5a3">
+                    <label class="form-check-label" for="q5a3">public void verEstudiante(View view) { Intent intent = new Intent(this, VerEstudiante.class); Bundle bundle = new Bundle(); bundle.putString('ID', estudianteID); intent.putExtras(bundle); startActivity(intent); }</label>
+                </div>
+            </div>
+
+            <!-- Pregunta 6 -->
+            <div class="mb-4">
+                <p><strong>Pregunta 6 (10 puntos)</strong></p>
+                <p>Explique paso a paso qué sucede con la pila de actividades en el siguiente escenario:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" value="1. Pila: MainActivity 2. Pila: MainActivity, SegundaActivity 3. Pila: MainActivity, SegundaActivity, TercerActivity 4. Pila: MainActivity, SegundaActivity, TercerActivity, MainActivity 5. Pila: MainActivity, SegundaActivity, TercerActivity 6. Pila: MainActivity, SegundaActivity" id="q6a1">
+                    <label class="form-check-label" for="q6a1">1. Pila: MainActivity 2. Pila: MainActivity, SegundaActivity 3. Pila: MainActivity, SegundaActivity, TercerActivity 4. Pila: MainActivity, SegundaActivity, TercerActivity, MainActivity 5. Pila: MainActivity, SegundaActivity, TercerActivity 6. Pila: MainActivity, SegundaActivity</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" value="1. Pila: MainActivity 2. Pila: MainActivity, SegundaActivity 3. Pila: MainActivity, SegundaActivity, TercerActivity 4. Pila: MainActivity, SegundaActivity 5. Pila: MainActivity, SegundaActivity 6. Pila: MainActivity" id="q6a2">
+                    <label class="form-check-label" for="q6a2">1. Pila: MainActivity 2. Pila: MainActivity, SegundaActivity 3. Pila: MainActivity, SegundaActivity, TercerActivity 4. Pila: MainActivity, SegundaActivity 5. Pila: MainActivity, SegundaActivity 6. Pila: MainActivity</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" value="1. Pila: MainActivity 2. Pila: MainActivity, SegundaActivity 3. Pila: MainActivity, SegundaActivity, TercerActivity 4. Pila: MainActivity, SegundaActivity, TercerActivity 5. Pila: MainActivity 6. Pila: MainActivity, SegundaActivity, TercerActivity" id="q6a3">
+                    <label class="form-check-label" for="q6a3">1. Pila: MainActivity 2. Pila: MainActivity, SegundaActivity 3. Pila: MainActivity, SegundaActivity, TercerActivity 4. Pila: MainActivity, SegundaActivity, TercerActivity 5. Pila: MainActivity 6. Pila: MainActivity, SegundaActivity, TercerActivity</label>
+                </div>
+            </div>
+
+            <!-- Pregunta 7 -->
+            <div class="mb-4">
+                <p><strong>Pregunta 7 (10 puntos)</strong></p>
+                <p>a. Dada la siguiente clase, ¿qué le agregaría para leer un texto luego de ser ingresado por el usuario en un EditText llamado “entrada”?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7a" value="private EditText entrada; @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.activity_main); entrada = findViewById(R.id.editEntrada); String leoTexto = entrada.getText().toString(); }" id="q7a1">
+                    <label class="form-check-label" for="q7a1">private EditText entrada; @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.activity_main); entrada = findViewById(R.id.editEntrada); String leoTexto = entrada.getText().toString(); }</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7a" value="private EditText entrada; @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.activity_main); String leoTexto = findViewById(R.id.editEntrada).getText().toString(); }" id="q7a2">
+                    <label class="form-check-label" for="q7a2">private EditText entrada; @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.activity_main); String leoTexto = findViewById(R.id.editEntrada).getText().toString(); }</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7a" value="private EditText entrada; @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.activity_main); entrada = findViewById(R.id.editEntrada); }" id="q7a3">
+                    <label class="form-check-label" for="q7a3">private EditText entrada; @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.activity_main); entrada = findViewById(R.id.editEntrada); }</label>
+                </div>
+            </div>
+
+            <!-- Pregunta 8 -->
+            <div class="mb-4">
+                <p><strong>Pregunta 8 (10 puntos)</strong></p>
+                <p>a. ¿Cuáles son las ventajas de utilizar Web Services?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8a" value="Interoperabilidad. Independientes de cualquier plataforma o lenguaje de programación. Alcance global. Están disponibles en cualquier parte con acceso a Internet. Reutilización de componentes. Permiten compartir funcionalidades y datos entre aplicaciones." id="q8a1">
+                    <label class="form-check-label" for="q8a1">Interoperabilidad. Independientes de cualquier plataforma o lenguaje de programación. Alcance global. Están disponibles en cualquier parte con acceso a Internet. Reutilización de componentes. Permiten compartir funcionalidades y datos entre aplicaciones.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8a" value="Velocidad en la transmisión de datos. Simplificación en la integración de sistemas." id="q8a2">
+                    <label class="form-check-label" for="q8a2">Velocidad en la transmisión de datos. Simplificación en la integración de sistemas.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8a" value="Reducción del costo de desarrollo. Mejora en el rendimiento del sistema." id="q8a3">
+                    <label class="form-check-label" for="q8a3">Reducción del costo de desarrollo. Mejora en el rendimiento del sistema.</label>
+                </div>
+
+                <p>b. ¿Cuáles son los componentes principales de la arquitectura de un Web Service estándar?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8b" value="El proveedor del servicio web, el solicitante del servicio web y el corredor de servicios." id="q8b1">
+                    <label class="form-check-label" for="q8b1">El proveedor del servicio web, el solicitante del servicio web y el corredor de servicios.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8b" value="El servidor web, el cliente y el intermediario de datos." id="q8b2">
+                    <label class="form-check-label" for="q8b2">El servidor web, el cliente y el intermediario de datos.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8b" value="El interfaz de usuario, el servidor de datos y el protocolo de comunicación." id="q8b3">
+                    <label class="form-check-label" for="q8b3">El interfaz de usuario, el servidor de datos y el protocolo de comunicación.</label>
+                </div>
+            </div>
+
+            <!-- Pregunta 9 -->
+            <div class="mb-4">
+                <p><strong>Pregunta 9 (10 puntos)</strong></p>
+                <p>a. Detalle qué es el hilo principal y los hilos trabajadores.</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9a" value="El hilo principal es el programa en ejecución. Los hilos trabajadores pueden realizar tareas independientes al hilo principal. Estos se pueden utilizar para ejecutar tareas de larga duración, asíncronas o servicios." id="q9a1">
+                    <label class="form-check-label" for="q9a1">El hilo principal es el programa en ejecución. Los hilos trabajadores pueden realizar tareas independientes al hilo principal. Estos se pueden utilizar para ejecutar tareas de larga duración, asíncronas o servicios.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9a" value="El hilo principal es el encargado de realizar operaciones en la interfaz de usuario. Los hilos trabajadores solo manejan tareas relacionadas con la entrada de datos." id="q9a2">
+                    <label class="form-check-label" for="q9a2">El hilo principal es el encargado de realizar operaciones en la interfaz de usuario. Los hilos trabajadores solo manejan tareas relacionadas con la entrada de datos.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9a" value="El hilo principal maneja las solicitudes de red mientras que los hilos trabajadores se encargan de las operaciones del sistema de archivos." id="q9a3">
+                    <label class="form-check-label" for="q9a3">El hilo principal maneja las solicitudes de red mientras que los hilos trabajadores se encargan de las operaciones del sistema de archivos.</label>
+                </div>
+
+                <p>b. ¿Qué restricciones debemos tener en cuenta cuando trabajamos con hilos?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9b" value="No bloquear el hilo principal. Utilizar sincronización adecuada para evitar problemas de concurrencia. No realizar operaciones pesadas en el hilo principal." id="q9b1">
+                    <label class="form-check-label" for="q9b1">No bloquear el hilo principal. Utilizar sincronización adecuada para evitar problemas de concurrencia. No realizar operaciones pesadas en el hilo principal.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9b" value="Usar siempre un solo hilo para evitar conflictos. No utilizar sincronización." id="q9b2">
+                    <label class="form-check-label" for="q9b2">Usar siempre un solo hilo para evitar conflictos. No utilizar sincronización.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9b" value="No realizar operaciones en el hilo principal. Utilizar múltiples hilos para realizar todas las operaciones." id="q9b3">
+                    <label class="form-check-label" for="q9b3">No realizar operaciones en el hilo principal. Utilizar múltiples hilos para realizar todas las operaciones.</label>
+                </div>
+            </div>
+
+          <!-- Pregunta 10 -->
+<div class="mb-4">
+    <p><strong>Pregunta 10 (10 puntos)</strong></p>
+    <p>a. ¿Qué entiende por permisos en una aplicación?</p>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="q10a" value="Permite a la aplicación acceder a datos o acciones restringidas del sistema." id="q10a1">
+        <label class="form-check-label" for="q10a1">Permite a la aplicación acceder a datos o acciones restringidas del sistema.</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="q10a" value="Son configuraciones que definen la apariencia y comportamiento de la interfaz de usuario." id="q10a2">
+        <label class="form-check-label" for="q10a2">Son configuraciones que definen la apariencia y comportamiento de la interfaz de usuario.</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="q10a" value="Son requisitos técnicos necesarios para la instalación de la aplicación en diferentes dispositivos." id="q10a3">
+        <label class="form-check-label" for="q10a3">Son requisitos técnicos necesarios para la instalación de la aplicación en diferentes dispositivos.</label>
+    </div>
+
+    <p>b. ¿Dónde debo definir los permisos que necesitará mi aplicación para funcionar correctamente?</p>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="q10b" value="Los permisos los definimos en el manifiesto de nuestra aplicación." id="q10b1">
+        <label class="form-check-label" for="q10b1">Los permisos los definimos en el manifiesto de nuestra aplicación.</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="q10b" value="En el archivo de configuración del servidor de la aplicación." id="q10b2">
+        <label class="form-check-label" for="q10b2">En el archivo de configuración del servidor de la aplicación.</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="q10b" value="En la configuración de la interfaz gráfica de usuario." id="q10b3">
+        <label class="form-check-label" for="q10b3">En la configuración de la interfaz gráfica de usuario.</label>
+    </div>
+
+    <p>c. Si quiero hacer uso de un servicio web en mi aplicación, ¿qué permisos necesito?</p>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="q10c" value="Necesito permisos de acceso a internet y acceso al estado de la conexión." id="q10c1">
+        <label class="form-check-label" for="q10c1">Necesito permisos de acceso a internet y acceso al estado de la conexión.</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="q10c" value="Solo necesito permisos de almacenamiento local." id="q10c2">
+        <label class="form-check-label" for="q10c2">Solo necesito permisos de almacenamiento local.</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="q10c" value="Necesito permisos para acceder a la cámara y a la ubicación del usuario." id="q10c3">
+        <label class="form-check-label" for="q10c3">Necesito permisos para acceder a la cámara y a la ubicación del usuario.</label>
+    </div>
+
+    <p>d. Implemente las líneas necesarias para agregar estos permisos en el archivo Manifest.xml</p>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="q10d" value="<uses-permission android:name=&quot;android.permission.INTERNET&quot;/>&#10;<uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot;/>" id="q10d1">
+        <label class="form-check-label" for="q10d1">&lt;uses-permission android:name="android.permission.INTERNET"/&gt;&#10;&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/&gt;</label>
+    </div>
+</div>
+
+
+            <button type="button" onclick="calculateScore()" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
